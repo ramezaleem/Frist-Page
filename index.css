@@ -1,0 +1,109 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header p {
+    padding: 10px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    border-top: 1px solid rebeccapurple;
+    border-bottom: 1px solid rebeccapurple;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    position: absolute;
+    border: 2px solid rebeccapurple;
+    width: 90%;
+    height: 400px;
+    margin-top: 50px;
+    padding-top: 100px;
+}
+
+.center .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.center .text .pass {
+    margin-left: -37px;
+}
+
+.center .text input {
+    margin-left: 30px;
+    width: 70%;
+    height: 50px;
+    border: 1px solid rgb(167, 159, 159);
+}
+
+input[type="text"]:focus,
+input[type="Password"]:focus {
+    border: 2px solid rebeccapurple;
+    outline: none;
+}
+
+button {
+    top: 70%;
+    left: 78.5%;
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(13, 196, 13);
+    border: none;
+    color: white;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.text label {
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+@media (max-width:500px) {
+    .center {
+        margin-top: 30px;
+        height: 310px;
+        padding-top: 50px;
+    }
+    .center .text input {
+        margin-right: 20px;
+        height: 25px;
+        width: 100px;
+    }
+    .center .text label {
+        margin-left: 25px;
+        font-size: 13px;
+    }
+    .center .text .pass {
+        margin-left: 39px;
+    }
+    .center .text input[type="password"] {
+        margin-right: 60px;
+    }
+    button {
+        margin-left: -120px;
+    }
+}
